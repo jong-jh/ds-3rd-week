@@ -1,29 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define MALLOC(p,s)\
-    if(!((p)=malloc(s))){\
-        fprintf(stderr,"Insufficient memory");\
-        exit(EXIT_FAILURE);\
-    }
+void main(){
+    printf("---2018038051---정종현---size.c\n\n");
+    int **y;
+    char **x;
+/*본인의 컴파일러는 포인터변수에 32bit를 할당해주기 때문에 int형으로 선언을 하면
+차이점을 확인하는 것이 쉽지 않아 int형이 아닌 char 형으로 선언하였다.
+x와 *x 는 주소값을 value로 가지고 있는 포인터변수이고, **x는 char형 값을
+저장하기 때문에 크기가 1byte임을 확인할 수 있다.
+*/
+    printf("sizeof(x) = %u\n",sizeof(y));
+    printf("sizeof(*x) = %lu\n",sizeof(*y));
+    printf("sizeof(**x) = %lu\n",sizeof(**y));
 
-int **make2dArray(int rows,int cols){
-    int **x,i;
-    MALLOC(x,rows*sizeof(*x));
-
-    for(i=0;i<rows;i++)
-        MALLOC(x[i],cols*sizeof(**x));
-    return x;
-
-};
-
-int main(){
-    int r,c;
-    int **pt;
-    r=2;
-    c=4;
-    pt=make2dArray(r,c);
-    printf("value of pt = %p",pt);
-    printf("value of *pt = %p",*pt);
-
-//dfasffasfasf
+    printf("sizeof(x) = %u\n",sizeof(x));
+    printf("sizeof(*x) = %lu\n",sizeof(*x));
+    printf("sizeof(**x) = %lu\n",sizeof(**x));
 }

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 void main(){
+    printf("---2018038051 ---  정종현 --- ap1.c\n");
     int list[5];
     int *plist[5]={NULL,}; //크기 5의 포인터 배열 plist를 선언하고, NULL로 초기화 해준다. 이 때 NULL로 초기화를 하는 이유는, 포인터변수에 예상하지 못한 값이 들어가는 것을 방지하기 위함이다.
     

@@ -3,6 +3,7 @@
 
 void main()
 {
+    printf("---2018038051 ---  정종현 --- ap2.c\n");
 int list[5]; //크기가 5인 배열 list와 포인트배열 plist를 선언한다.
 int *plist[5];
 /*list[0],list[1]에 값을 대입한다.*/

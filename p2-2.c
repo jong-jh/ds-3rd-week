@@ -3,6 +3,8 @@
 void print1(int *ptr,int rows); //print1 함수 정의
 
 int main(){
+    printf("---2018038051 ---  정종현 --- p2-2.c\n\n");
+
     int one[]={0,1,2,3,4}; //int형 배열 one 선언 및 초기화
     /*배열 one 의 주소를 출력한다.
     배열의 이름과 one[0]의 주소는 배열의 주소를 의미한다.

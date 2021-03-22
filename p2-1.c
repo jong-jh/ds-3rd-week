@@ -6,6 +6,7 @@ float sum(float [],int); //sum 사용자정의 함수 정의
 float input[MAX_SIZE],answer; //전역으로 선언
 int i;
 void main(){
+    printf("---2018038051 ---  정종현 --- p2-1.c\n");
     for(i=0;i<MAX_SIZE;i++) //input 배열에 각 인덱스에 0부터99까지 값을 차례로 대입한다.
         input[i]=i;
 
